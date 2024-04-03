@@ -3,6 +3,10 @@
 ## Overview
 This script is designed to extract the largest JPEG image embedded within Adobe Lightroom's preview files (.lrprev). It can process individual .lrprev files or directories containing multiple .lrprev files. The script also supports querying a Lightroom catalog (.lrcat) to retrieve the original file path for more organized output.
 
+## :warning: Warning 
+ - Use a copy of your Lightroom catalog and preview files with this script.
+ - Tested with Lightroom v6.13 catalog on macOS
+
 ## Features
 - Extract the largest JPEG image from .lrprev files.
 - Process a single file or a directory of files.
@@ -60,3 +64,6 @@ python lrprev-extract.py -d /path/to/lrcatalog/directory.lrdata -o /path/to/outp
 - Either `--input-dir` or `--input-file` must be supplied. Both cannot be used simultaneously.
 - The script prints the progress and any errors encountered during execution to the console.
 - Ensure the output directory exists or has the necessary permissions to be created.
+- Default path for Lightroom catalog are:
+    - Windows: \Users\[user name]\Pictures\Lightroom.
+    - macOS: /Users/[user name]/Pictures/Lightroom.
