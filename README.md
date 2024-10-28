@@ -19,10 +19,10 @@ This script is designed to extract the largest JPEG image embedded within Adobe 
 - argparse for command-line options parsing
 
 ## Installation
-Ensure you have Python and pip installed on your system. You can install the required dependencies by running:
+Ensure you have [uv](https://docs.astral.sh/uv/) on your system. You can install the required dependencies by running:
 
 ```
-pip install -r requirements.txt
+uv sync
 ```
 
 ## Usage
